@@ -5,6 +5,13 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Roboto";
@@ -69,7 +76,7 @@ header {
   padding-left: 37px;
 }
 .page-header {
-  margin-bottom: 6px;
+  margin-bottom: 26px;
 }
 
 .page-header::first-letter {
@@ -144,20 +151,7 @@ header {
   color: #fff;
   letter-spacing: 0.2px;
 }
-/* .wraper::before {
-  position: absolute;
-  left: 245px;
-  content: "";
-  display: block;
-  color: white;
-  width: 104px;
-  height: 104px;
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
-} */
-/* main {
-  position: relative;
-} */
+
 .wraper {
   position: absolute;
   top: 291px;
@@ -271,6 +265,12 @@ header {
   background-position: center;
 }
 .add-to-cart-item {
+  font-weight: 300;
+  font-family: "Roboto";
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e9f0fd;
   width: 166px;
   height: 50px;
   background-color: rgb(50, 50, 50);
@@ -283,7 +283,7 @@ header {
 .collection {
   width: 1110px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  height: 574px;
 }
 .collection-list-item {
   width: 255px;
@@ -295,6 +295,13 @@ header {
 }
 .collection-list-item:nth-child(4) {
   margin-right: 0px;
+}
+/* .collection-list2 {
+  position: relative;
+} */
+.collection-list {
+  position: relative;
+  top: 2px;
 }
 
 .collection-list li {
@@ -330,8 +337,24 @@ header {
   background-color: #8c8c8c;
 }
 footer {
-  height: 80px;
+  height: 87px;
   background-color: #323232;
+}
+.footer {
+  position: relative;
+  top: 33px;
+  left: 32px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-linc {
+  text-decoration: none;
+  color: #46bfa9;
 }
 
 .multiple-items .slick-prev,
@@ -347,10 +370,12 @@ footer {
   opacity: 0.651;
 }
 .multiple-items .slick-next {
-  right: 20%;
+  right: 15%;
+  top: -34px;
   transform: rotate(-90deg);
 }
 .multiple-items .slick-prev {
-  left: 20%;
+  left: 15%;
+  top: -43px;
   transform: rotate(90deg);
 }
