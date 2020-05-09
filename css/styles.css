@@ -145,7 +145,17 @@ header {
 } */
 
 /* SLIDER */
-.multiple-items .slick-prev,
+.multiple-items .slick-prev {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+}
 .multiple-items .slick-next {
   width: 100px;
   height: 100px;
@@ -158,6 +168,9 @@ header {
   opacity: 0.651;
 }
 .multiple-items .slick-next {
+  overflow: hidden;
+  /* margin: 0px;
+  padding: 0px; */
   right: 15%;
   top: -34px;
   transform: rotate(-90deg);
