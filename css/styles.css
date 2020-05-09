@@ -60,6 +60,7 @@ body {
 }
 main {
   background-color: #e9f0fd;
+  overflow: hidden;
 }
 
 /* SITE_LOGO */
@@ -74,7 +75,6 @@ header {
   font-size: 30px;
   color: #605e5e;
   font-family: "Roboto";
-  /* padding-left: 37px; */
 }
 .page-header {
   margin-bottom: 26px;
@@ -139,11 +139,6 @@ header {
   color: #fff;
 }
 
-/* .box {
-  width: 1600px;
-  margin: 0px auto;
-} */
-
 /* SLIDER */
 .multiple-items .slick-prev {
   width: 100px;
@@ -196,12 +191,6 @@ header {
   left: 426px;
   letter-spacing: -1px;
 }
-/* .multiple-items .col {
-  width: 400px;
-  height: 300px;
-  background: #000;
-  margin: 0 10px;
-} */
 
 .multiple-items .col {
   height: 600px;
@@ -248,7 +237,7 @@ header {
   width: 240px;
   height: 266px;
   background-color: rgb(0, 0, 0);
-  /* opacity: 0.549; */
+
   opacity: 0;
 }
 .collection-list-item {
@@ -414,7 +403,7 @@ footer {
 .footer {
   position: relative;
   top: 33px;
-  left: 32px;
+
   letter-spacing: 0.2px;
   font-family: "Roboto";
   font-size: 16px;
