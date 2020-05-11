@@ -103,7 +103,7 @@ header {
 .site-navigation-list {
   position: relative;
 
-  left: 40px;
+  left: 1px;
   top: 9px;
 }
 
@@ -130,6 +130,20 @@ header {
 .afortable {
   margin-bottom: 103px;
 }
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(50, 50, 50);
+}
+.opasity {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(0, 0, 2);
+  z-index: 1;
+  opacity: 0.522;
+}
 .afortable-title {
   text-transform: uppercase;
   font-size: 60px;
@@ -148,8 +162,12 @@ header {
   bottom: 0;
   margin: auto;
   z-index: 2;
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
+  background-color: #1abc9c;
+  background-image: url("../img/slick-prew.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* opacity: 0.651; */
 }
 .multiple-items .slick-next {
   width: 100px;
@@ -159,21 +177,32 @@ header {
   bottom: 0;
   margin: auto;
   z-index: 2;
-  background-color: rgb(78, 198, 171);
+  background-image: url("../img/slick-next.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1abc9c;
+  /* background-color: rgb(78, 198, 171);
+  opacity: 0.651; */
+}
+
+.multiple-items .slick-next.slick-disabled,
+.multiple-items .slick-prev.slick-disabled {
+  background-color: #1abc9c;
   opacity: 0.651;
 }
+
 .multiple-items .slick-next {
   overflow: hidden;
   /* margin: 0px;
   padding: 0px; */
-  right: 15%;
+  right: 18%;
   top: -34px;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }
 .multiple-items .slick-prev {
-  left: 15%;
+  left: 222px;
   top: -43px;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 .afortable-text {
@@ -187,12 +216,14 @@ header {
 
 .wraper {
   position: absolute;
-  top: 291px;
-  left: 390px;
+  top: 76%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   letter-spacing: -1px;
+  z-index: 2;
 }
 
-.multiple-items .col {
+.multiple-items {
   height: 600px;
   width: 1600px;
   margin: 0 auto;
@@ -288,12 +319,19 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+.love:hover {
+  background-color: #1abc9c;
+}
+
 .leter {
-  background-color: rgb(26, 188, 156);
+  /* background-color: rgb(26, 188, 156); */
   background-image: url("../img/icons2.png");
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid rgb(26, 188, 156);
+  /* border: 1px solid rgb(26, 188, 156); */
+}
+.leter:hover {
+  background-color: #1abc9c;
 }
 
 .clock {
@@ -301,6 +339,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+.clock:hover {
+  background-color: #1abc9c;
+}
+
 .add-to-cart {
   position: absolute;
   opacity: 0;
@@ -415,4 +457,23 @@ footer {
 .footer-linc {
   text-decoration: none;
   color: #46bfa9;
+}
+.Rectangle_2 {
+  background-color: rgb(0, 0, 2);
+  opacity: 0.522;
+  position: absolute;
+  left: -112px;
+  top: 84px;
+  width: 1807px;
+  height: 607px;
+  z-index: 72;
+}
+.Rectangle_1 {
+  background-color: rgb(50, 50, 50);
+  position: absolute;
+  left: -39px;
+  top: 91px;
+  width: 1717px;
+  height: 600px;
+  z-index: 70;
 }
