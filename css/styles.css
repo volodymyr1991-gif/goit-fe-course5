@@ -216,11 +216,11 @@ header {
 
 .wraper {
   position: absolute;
-  top: 76%;
+  top: 48%;
   transform: translate(-50%, -50%);
   left: 50%;
   letter-spacing: -1px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .multiple-items {
